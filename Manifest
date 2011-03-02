@@ -1,0 +1,6 @@
+Manifest
+README
+README.rdoc
+Rakefile
+lib/reader_writer_cache_store.rb
+lib/reader_writer_cache_store/active_support/cache/reader_writer_cache_store.rb
