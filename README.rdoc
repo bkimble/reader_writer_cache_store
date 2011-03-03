@@ -13,7 +13,7 @@ Use:
 
 In your application.rb or environment specific config file, instead of:
 
-config.cache_store =  :redis_store, {:host => '10.1.1.2', :port => 6379, :db => 0, :compress => true, :compress_threshold => 100}       
+ config.cache_store =  :redis_store, {:host => '10.1.1.2', :port => 6379, :db => 0, :compress => true, :compress_threshold => 100}       
 
 separate your readers and writers via a key:
 
