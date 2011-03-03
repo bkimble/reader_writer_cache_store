@@ -2,15 +2,15 @@
 
 Gem::Specification.new do |s|
   s.name = %q{reader_writer_cache_store}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Billy Kimble"]
   s.date = %q{2011-03-02}
   s.description = %q{Reader/Writer Cache Store}
   s.email = %q{basslines@gmail.com}
-  s.extra_rdoc_files = ["README", "README.rdoc", "lib/reader_writer_cache_store.rb", "lib/reader_writer_cache_store/active_support/cache/reader_writer_cache_store.rb"]
-  s.files = ["Manifest", "README", "README.rdoc", "Rakefile", "lib/reader_writer_cache_store.rb", "lib/reader_writer_cache_store/active_support/cache/reader_writer_cache_store.rb", "reader_writer_cache_store.gemspec"]
+  s.extra_rdoc_files = ["README", "README.rdoc", "lib/active_support/cache/reader_writer_cache_store.rb"]
+  s.files = ["Manifest", "README", "README.rdoc", "Rakefile", "lib/active_support/cache/reader_writer_cache_store.rb", "reader_writer_cache_store.gemspec"]
   s.homepage = %q{https://github.com/bkimble}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Reader_writer_cache_store", "--main", "README"]
   s.require_paths = ["lib"]
