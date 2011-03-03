@@ -2,5 +2,6 @@ Manifest
 README
 README.rdoc
 Rakefile
-lib/reader_writer_cache_store.rb
-lib/reader_writer_cache_store/active_support/cache/reader_writer_cache_store.rb
+lib/active_support/cache/reader_writer_cache_store.rb
+reader_writer_cache_store.gemspec
+reader_writer_cache_store.rb

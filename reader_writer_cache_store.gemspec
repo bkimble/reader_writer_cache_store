@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = %q{Reader/Writer Cache Store}
   s.email = %q{basslines@gmail.com}
   s.extra_rdoc_files = ["README", "README.rdoc", "lib/reader_writer_cache_store.rb", "lib/reader_writer_cache_store/active_support/cache/reader_writer_cache_store.rb"]
-  s.files = ["README", "README.rdoc", "Rakefile", "lib/reader_writer_cache_store.rb", "lib/reader_writer_cache_store/active_support/cache/reader_writer_cache_store.rb", "Manifest", "reader_writer_cache_store.gemspec"]
+  s.files = ["Manifest", "README", "README.rdoc", "Rakefile", "lib/reader_writer_cache_store.rb", "lib/reader_writer_cache_store/active_support/cache/reader_writer_cache_store.rb", "reader_writer_cache_store.gemspec"]
   s.homepage = %q{https://github.com/bkimble}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Reader_writer_cache_store", "--main", "README"]
   s.require_paths = ["lib"]
