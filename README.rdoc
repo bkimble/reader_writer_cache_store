@@ -1,0 +1,29 @@
+Reader/Writer Cache Store
+Billy Kimble, 2011/03/01
+
+This gem is intended to be used in a situation where you have 1 cache store that you write to, but 1 or more than you read from separate from the write store. This is a common method of offloading cycles in a MySQL master/slave setup. All writes go to master, all reads pull from slave. 
+
+I created this specifically to be used with a Redis cache store where your remote cache store may be on 1 server, but you have a slave copy of that server's cache data running elsewhere. To cut down on constant cross-server operations you should have a  slave cache on every application server. Though created with redis in mind, it doesn't care about your cache store. It should be flexible to use with any replicating cache server.
+
+Credit to Ben Marini (https://github.com/bmarini) for the the original implementation.
+
+----
+
+Use:
+
+In your application.rb or environment specific config file, instead of:
+
+ config.cache_store =  :redis_store, {:host => '10.1.1.2', :port => 6379, :db => 0, :compress => true, :compress_threshold => 100}       
+
+separate your readers and writers via a key:
+
+ config.cache_store = :reader_writer_cache_store, {
+   :writers => [
+     {:redis_store, {:host => '10.1.1.2', :port => 6379, :db => 0, :compress => true, :compress_threshold => 100}}       
+   ], 
+   :readers => [
+     {:redis_store, {:host => '127.0.0.1', :port => 6379, :db => 0, :compress => true, :compress_threshold => 100}}
+   ]
+ }
+
+
